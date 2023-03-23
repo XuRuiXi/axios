@@ -323,7 +323,7 @@ axios({
   data: {
     pageNum: 1,
   },
-  cancelToken: new axios.cancelToken(function(c) {
+  cancelToken: new axios.CancelToken(function(c) {
     cancel = c;
   })
 })
